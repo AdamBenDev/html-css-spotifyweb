@@ -16,12 +16,13 @@ main{
     width: 100%;
     background-color: rgb(0, 0, 0);
     height: calc(100% -100px);
+    display: flex;
 }
 
 /*SIDEBAR*/
 
 .mobile-side{
-    display: non;
+    display: none;
 }
 
 .sidebar {
@@ -41,6 +42,8 @@ main{
     min-width: 100%;
     background-color: rgb(0, 0, 0);
 }
+
+
 
 .nav-playlist h3{
     margin-top: 10px;
@@ -138,4 +141,86 @@ main{
     color: white;
 }
 
+a.btn{
+    color: white;
+    border: 1px solid white;
+    padding: 15px 40px;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    line-height: 100px;
+    text-decoration: none;
+    max-width: 20px;
+}
 
+.call-to-action{
+    width: 100%;
+    background-color: black;
+    opacity: 75%;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+/*COVERS*/
+
+.div-songs{
+    flex: 4.5;
+    background-color: rgb(10, 11, 33) ;
+    width: 95%;
+    overflow: auto;
+}
+
+.covers {
+    background-color:  rgb(10, 11, 33);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.list-nav{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.list-nav li{
+    display: inline;
+    padding: 7px;
+}
+
+.list-nav a{
+    text-decoration: none;
+    color:  rgb(166, 162, 162);
+    font-size: 0.70rem;
+}
+/*RECENTLY PLAYED*/
+
+.recently-played{
+    background-color: rgb(10, 11, 33);
+
+}
+
+.recently-played h2{
+    color: white;
+    font-size: 0.85rem;
+}
+
+.recently-played p{
+    color: rgb(166, 162, 162);
+    font-size: 0.75rem;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-cover img{
+    max-width:100px;
+    padding: 10px;
+}
+
+.text-container{
+    margin-top: -30px;
+    text-align: center;
+}
