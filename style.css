@@ -203,11 +203,14 @@ a.btn{
 .recently-played h2{
     color: white;
     font-size: 0.85rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .recently-played p{
     color: rgb(166, 162, 162);
     font-size: 0.75rem;
+    margin-bottom: 20px;
 }
 
 .menu-list{
@@ -216,11 +219,154 @@ a.btn{
 }
 
 .container-cover img{
-    max-width:100px;
+    max-width:200px;
     padding: 10px;
 }
 
 .text-container{
-    margin-top: -30px;
+    margin-top: 10px;
     text-align: center;
+    font-weight: bold;
+}
+
+.round img{
+    border-radius: 50%;
+}
+
+/*FOOTER LEFT*/
+
+footer{
+    background-color: gray;
+}
+
+.footer-left{
+   background-color: green;
+}
+
+
+
+.sinister img{
+    max-width: 100%;
+    padding: 10px;
+}
+.container-footer{
+    background-color:#282828;
+    width: auto;
+    height: 100px;
+    display: flex;
+}
+
+
+.container-footer img{
+    max-width:70px;
+    padding: 10px;
+}
+
+.sinister{
+    display: flex;
+    align-items: center;
+}
+
+.text-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-left h2{
+    color: white;
+    font-size: 0.85rem;
+}
+
+.text-left p{
+    color: rgb(166, 162, 162);
+    font-size: 0.75rem;
+}
+
+.icons-left{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin: 20px;
+    color: gray;
+}
+
+
+
+.fa-folder {
+    margin-left: 20px;
+}
+
+.row{
+    display: flex;
+}
+
+/*PLAYBAR*/
+
+.playbar{
+    background-color:#282828;
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.contenitore {
+    width: 600px; 
+    height: 20px; 
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+  
+  .barra {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%; 
+    height: 5px; 
+    background-image: linear-gradient(to right, #ddd 30%, gray 70%);
+}
+
+
+
+.player-btn{
+    flex-basis: 40%;
+}
+
+.player-btn i {
+    width: 50px;
+    color: white;
+    font-size: x-large;
+}
+
+/*FOOTER RIGHT*/
+
+.footer-right{
+    background-color: #282828;
+    width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options i{
+    width: 30px;
+}
+
+.contenitore-right{
+    width: 100px;    
+    color: white;
+    margin-bottom: 10px;
+}
+
+.barra-right {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%; /* imposta la larghezza della barra */
+    height: 5px; /* imposta l'altezza della barra */
+    background-image: linear-gradient(to right, #ddd 30%, gray 70%);
 }
