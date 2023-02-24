@@ -53,6 +53,13 @@ img {
   max-width: 100%;
 }
 
+footer {
+  background-color: darkgrey;
+  height: 80px;
+  z-index: 2;
+  position: relative;
+}
+
 /**********UTILS*********/
 .top-part {
   height: calc(100vh - 80px);
@@ -85,29 +92,28 @@ img {
 }
 
 .pb-10 {
-    padding-bottom: 10px;
-  }
+  padding-bottom: 10px;
+}
 
-  .pt-20 {
-    padding-top: 20px;
-  }
+.pt-20 {
+  padding-top: 20px;
+}
 
-  .color-icon {
-    filter: opacity(0.8);
-  }
+.color-icon {
+  filter: opacity(0.8);
+}
 
-  .color-white {
-    color: var(--white);
-  }
+.color-white {
+  color: var(--white);
+}
 
-  .align {
-    align-items: center;
-  }
+.align {
+  align-items: center;
+}
 
 .hidden {
-    display: none;
-  }
-
+  display: none;
+}
 
 /***************LEFT SIDEBAR*************/
 
@@ -189,37 +195,18 @@ img {
 /*NAVBAR*/
 
 .navbar ul {
-   
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar li {
-    font-size: 12px;
-    font-weight: bold;
-    padding: 15px;
-  }
-
-  .navbar li a {
-    color: lightgray;
-  }
-
-
-.list-nav {
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.list-nav li {
-  display: inline;
-  padding: 7px;
+.navbar li {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px;
 }
 
-.list-nav a {
-  text-decoration: none;
-  color: rgb(166, 162, 162);
-  font-size: 0.7rem;
+.navbar li a {
+  color: lightgray;
 }
 
 .navbar .line-yellow-navbar {
@@ -266,9 +253,126 @@ img {
 
 /************FOOTER************/
 
-footer{
-    
+/*LEFT*/
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
 }
+
+.footer-center {
+  flex-basis: 40%;
+}
+
+.footer-left img {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+.footer-left ul,
+span {
+  padding-left: 10px;
+  padding-right: 15px;
+  font-size: 11px;
+  color: lightgray;
+}
+
+.footer-left .name-song {
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+.footer-left .icons {
+  font-size: 13px;
+}
+
+/*CENTER*/
+.footer-center .forward-rotate {
+  transform: rotate(180deg);
+}
+
+.footer-center ul {
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.footer-center .icons-center-over li {
+  padding: 0 15px;
+}
+
+.footer-center ul.icons-center-over {
+  padding: 8px 15px;
+}
+
+.footer-center ul.icons-center-under {
+  padding: 0 25px;
+  padding-bottom: 10px;
+}
+
+.footer-center .icons-center-under {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.footer-right .icons {
+    color: white;
+  }
+
+  .footer-right .icons li {
+    padding: 0 5px;
+  }
+
+  .footer-right ul {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-right .progress-bar {
+    width: 100%;
+  }
+
+  .footer-right .div-progress-bar {
+    padding-right: 10px;
+  }
+
+  footer .progress-bar {
+    background-color: grey;
+    height: 4px;
+    width: 60%;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .progress-bar-value {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: lightgray;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  footer .progress-bar-value > .pointer {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+
+
+/*RIGHT*/
+
 
 
 /*******************HOVER********************/
