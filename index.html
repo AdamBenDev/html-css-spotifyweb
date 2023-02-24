@@ -6,29 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <!--HEADER-->
-
-
-    <main>
-       
-        <div class="mobile-side">
-            <div>spotify</div>
-            <section class="sect-mobile">
-                <ul>
-                    <Li>Home</Li>
-                    <Li>Cerca</Li>
-                    <Li>La tua libreria</Li>
-                </ul>
-            </section>
-        </div>
-
+    <div class="top-part flex">
         <div class="sidebar">
             <!--LOGO-->
             <section class="top-nav">
@@ -39,13 +32,16 @@
                 <div class="nav-main-menu">
                     <ul class="first-menu">
                         <li class="active">
-                            <img src="./img/home.svg" alt=""><p> Home</p>
+                            <img src="./img/home.svg" alt="">
+                            <p> Home</p>
                         </li>
                         <li>
-                            <img src="./img/search.svg" alt=""><p>Cerca</p>
+                            <img src="./img/search.svg" alt="">
+                            <p>Cerca</p>
                         </li>
                         <li>
-                            <img src="./img/libreria.svg" alt=""><p>La tua libreria</p>
+                            <img src="./img/libreria.svg" alt="">
+                            <p>La tua libreria</p>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +62,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="bottom-nav">
+            <div class="bottom-nav">
                 <div class="dowload-app">
                     <img src="./img/download.svg" alt="dowload">
                     <span>Installa app</span>
@@ -74,20 +70,28 @@
                 <hr>
                 <div class="user">
                     <img src="./img/profile.svg" alt="">
-                    <p>John Doe</p>
+                    <div>
+                        <p>John Doe</p>
+                    </div>
                 </div>
-            </section>
+
+            </div>
             <!--MAIN MENU-->
 
         </div>
-        <section class="div-songs">
-            <div class="call-to-action">
-                <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
-            </div>
-            <!--COVERS-->
-            <div class="covers">
-                <nav class="list-nav">
-                    <ul>
+
+        <main>
+
+
+
+            <section class="main-content">
+                <header>
+                    <button class="btn upper">Effettua l'upgrade</button>
+                </header>
+                <!--COVERS-->
+
+                <nav class="navbar">
+                    <ul class="flex upper">
                         <li><a href="#">IN EVIDENZA</a></li>
                         <li><a href="#">IN EVIDENZA</a></li>
                         <li><a href="#">IN EVIDENZA</a></li>
@@ -95,119 +99,131 @@
                         <li><a href="#">IN EVIDENZA</a></li>
                         <li><a href="#">IN EVIDENZA</a></li>
                     </ul>
+                    <div class="line-yellow-navbar">
+                    
+                    </div>
                 </nav>
-            </div>
-            <!--RECENTLY PLAYED-->
-            <div class="recently-played covers-row">
-                <h2>Recently Played</h2>
-                <ul class="covers-list menu-list">
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
 
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/stranger.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
+                <!--RECENTLY PLAYED-->
+                <section id="recently-played">
+                    <div class="section">
+                        <h2>Recently played</h2>
+                        <div class="row-a">
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
 
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/aquietplace.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
 
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/split.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
 
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/cure.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
 
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/sinister.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Heavy Metal</h2>
-                            <p>Subtitle</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
 
-            <div class="recently-played covers-row">
-                <h2>Creato per John Doe</h2>
-                <p>piu' ascolti,piu' accurati saranno i suggerimenti</p>
-                <ul class="covers-list menu-list">
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/radar.jpeg" alt="">
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="./img/metal_lifting.jpg" alt=""></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Heavy Metal</h4>
+                                    <span>Subtitle</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-container">
-                            <h2>Release Radar</h2>
-                        </div>
-                    <li class="pic-container">
-                        <div class="container-cover">
-                            <img src="./img/mixdaily.jpeg" alt="">
-                        </div>
-                        <div class="text-container">
-                            <h2>Daily Mix</h2>
-                        </div>
-                    </li>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </section>
 
-            <div class="recently-played covers-row">
-                <h2>Artisti piu' popolari</h2>
-                <br>
-                <p>piu' ascolti,piu' accurati saranno i suggerimenti</p>
-                <ul class="covers-list menu-list">
-                    <li class="pic-container">
-                        <div class="container-cover round">
-                            <img src="./img/youg.jpeg" alt="">
+                <section id="john-doe">
+                    <div class="section">
+                        <h2>Creato per John Doe</h2>
+                        <span class="section-under-title">Più ascolti, più accurati saranno i suggerimenti.</span>
+                        <div class="row-a">
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="img/radar.jpeg" alt="radar"></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Release Radar</h4>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="img/mixdaily.jpeg" alt="mix-daily"></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Daily Mix 1</h4>
+                                </div>
+                            </div>
                         </div>
-
-                    <li class="pic-container">
-                        <div class="container-cover round">
-                            <img src="./img/einaudi.jpeg" alt="">
+                    </div>
+                </section>
+                <section id="popular-artist">
+                    <div class="section">
+                        <h2>Artisti più popolari</h2>
+                        <span class="section-under-title">Più ascolti, più accurati saranno i suggerimenti.</span>
+                        <div class="row-a">
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="img/youg.jpeg" alt="youg"></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Lana del Rey</h4>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <figure><img src="img/einaudi.jpeg" alt="einaudi"></figure>
+                                </div>
+                                <div class="card-title">
+                                    <h4>Ludovico Einaudi</h4>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </section>
+    </div>
 
-                    </li>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        </div>
     </main>
+    </div>
     <footer>
         <section class="row">
             <div class="container-footer">
@@ -232,7 +248,7 @@
                     <i class="fa-regular fa-circle-play"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
-                    
+
                 </div>
                 <div class="contenitore">
                     <p>0:25</p>
@@ -242,7 +258,7 @@
                 </div>
 
             </div>
-            
+
 
 
             <div class="footer-right">
