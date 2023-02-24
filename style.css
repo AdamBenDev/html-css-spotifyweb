@@ -8,7 +8,7 @@
 /*****************GENERALS************/
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #080b12;
   height: 80px;
   position: sticky;
   top: 0;
@@ -35,7 +35,7 @@ body {
   color: white;
 }
 main {
-  background-color: darkgray;
+  background-color: #141922;
   width: calc(100% - 70px);
   height: 100%;
 }
@@ -54,7 +54,7 @@ img {
 }
 
 footer {
-  background-color: darkgrey;
+  background-color: #282828;
   height: 80px;
   z-index: 2;
   position: relative;
@@ -104,7 +104,7 @@ footer {
 }
 
 .color-white {
-  color: var(--white);
+  color: white;
 }
 
 .align {
@@ -210,7 +210,7 @@ footer {
 }
 
 .navbar .line-yellow-navbar {
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid greenyellow;
   width: 27px;
   position: relative;
   left: 70px;
@@ -385,7 +385,7 @@ footer .progress-bar-value > .pointer {
 
 /* HEADER */
 header button:hover {
-  box-shadow: 0 0 5px var(--white);
+  box-shadow: 0 0 5px white;
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -430,7 +430,7 @@ header button:hover {
   }
 
   .footer-left .icons li:hover i {
-    color: var(--white);
+    color: white;
     cursor: pointer;
   }
 
@@ -439,11 +439,11 @@ header button:hover {
   }
 
   footer .progress-bar:hover .progress-bar-value {
-    background-color: var(--green);
+    background-color: green;
   }
 
   .footer-center .icons-center-over li:hover i {
-    text-shadow: 0 0 5px var(--white);
+    text-shadow: 0 0 5px white;
     cursor: pointer;
   }
 
@@ -518,6 +518,69 @@ header button:hover {
         display: flex;
         padding-bottom: 2px;
       }
+
+      .sidebar-top .text-hidden-playlist{
+        padding: 1px 0;
+      }
+
+      .sidebar-top .line-yellow-sidebar {
+        border-left: 3px solid greenyellow;
+        position: relative;
+        left: -12px;
+      }
+
+      .sidebar-top li.move-left {
+        position: relative;
+        right: 3px;
+      }
+
+      .sidebar-bottom .img-user img{
+        height: 30px;
+        width: 30px;
+      }
+
+      .sidebar-bottom .img-user .text-hidden{
+        line-height: 20px;
+      }
+
+      .sidebar-bottom .img-user img {
+        height: 30px;
+        width: 30px;
+      }
+  
+      .sidebar-bottom .img-user .text-hidden {
+        line-height: 30px;
+      }
+  
+      .sidebar-bottom .img-download img {
+        height: 20px;
+        margin-bottom: 10px;
+      }
+  
+      .sidebar-bottom .img-download .text-hidden {
+        line-height: 20px;
+      }
+  
+      .sidebar-bottom li:last-child {
+        width: 100%;
+        border-top: 1px solid grey;
+        padding-top: 10px;
+      }
+
+      /*NAVBAR*/
+
+      .navbar ul{
+        padding: 0 60px;
+      }
+
+      .navbar .line-yellow-navbar{
+        position: relative;
+        left: 170px;
+      }
+
+      
+
+
       
   }
 
