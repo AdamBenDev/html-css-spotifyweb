@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Style -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
+        integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=='
+        crossorigin='anonymous' />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -24,61 +28,50 @@
     <div class="top-part flex">
         <div class="sidebar">
             <!--LOGO-->
-            <section class="top-nav">
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="logo spotify">
-                </div>
+            <div class="sidebar-top">
+                <ul class="flex sidebar-top-icons">
+                    <li class="pb-10 logo-view"><img src="./img/logo-small.svg" alt="logo spotify"></li>
+                    <li class="logo-hidden"><img src="./img/logo.svg" alt=""></li>
+                    <li class="pb-10 flex move-left">
+                        <div class="flex line-yellow-sidebar"></div>
+                        <img src="./img/home.svg" alt="">
+                        <span class="text-hidden color-white">home</span>
+                    </li>
+                    <li class="pb-10 flex color-icon"><img src="img/search.svg" alt="search"><span
+                            class="text-hidden">Cerca</span></li>
+                    <li class="flex color-icon"><img src="img/libreria.svg" alt="library"><span class="text-hidden">La
+                            tua libreria</span></li>
+                </ul>
+                <ul class="flex playlist">
+                    <li class="hidden upper color-white">Playlist</li>
+                    <li class="hidden flex align"><i class="fa-solid fa-square-plus fa-2x"></i><span class="text-hidden">Crea Playlist</span></li>
 
-                <div class="nav-main-menu">
-                    <ul class="first-menu">
-                        <li class="active">
-                            <img src="./img/home.svg" alt="">
-                            <p> Home</p>
-                        </li>
-                        <li>
-                            <img src="./img/search.svg" alt="">
-                            <p>Cerca</p>
-                        </li>
-                        <li>
-                            <img src="./img/libreria.svg" alt="">
-                            <p>La tua libreria</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-playlist">
-                    <h3>PLAYLIST</h3>
-                    <a href="#">
-                        <span class="plus">+</span>
-                        <span class="new-playlist">New Playlist</span>
-                    </a>
-                    <ul class="playlist-name">
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                        <li><a href="#">Nome Playlist</a> </li>
-                    </ul>
-                </div>
-            </section>
-            <div class="bottom-nav">
-                <div class="dowload-app">
-                    <img src="./img/download.svg" alt="dowload">
-                    <span>Installa app</span>
-                </div>
-                <hr>
-                <div class="user">
-                    <img src="./img/profile.svg" alt="">
-                    <div>
-                        <p>John Doe</p>
-                    </div>
-                </div>
+                </ul>
 
+                <ul class="flex playlist-under">
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                    <li><span class="text-hidden text-hidden-playlist">Nome Playlist</span></li>
+                </ul>
             </div>
-            <!--MAIN MENU-->
+            <div class="sidebar-bottom">
+                <ul>
+                    <li class="flex img-download color-icon"><img src="img/download.svg" alt="download"><span
+                            class="text-hidden">Installa app</span></li>
+                    <li class="flex pt-20 img-user color-icon"><img src="img/profile.svg" alt="user"><span
+                            class="text-hidden color-white">John Doe</span></li>
+                </ul>
+            </div>
 
         </div>
+
+        <!--MAIN MENU-->
+
+
 
         <main>
 
@@ -93,14 +86,14 @@
                 <nav class="navbar">
                     <ul class="flex upper">
                         <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
                     </ul>
                     <div class="line-yellow-navbar">
-                    
+
                     </div>
                 </nav>
 
@@ -220,61 +213,21 @@
                         </div>
                     </div>
                 </section>
+        </main>
     </div>
-
-    </main>
-    </div>
-    <footer>
-        <section class="row">
-            <div class="container-footer">
-                <div class="sinister">
-                    <img src="./img/sinister.jpeg" alt="">
-                </div>
-
-                <div class="text-left">
-                    <h2>Sinister</h2>
-                    <p>Brano Nome</p>
-                </div>
-
-                <div class="icons-left">
-                    <i class="fa-sharp fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
+    <footer class="flex">
+        <div class="footer-left">
+            <img src="./img/sinister.jpeg" alt="Sinister">
+            <div class="footer-left text">
+                <span class="name-song">
+                    Sinister
+                </span>
+                <ul>
+                    <li>Brano</li>
+                    <li>Nome</li>
+                </ul>
             </div>
-            <div class="playbar">
-                <div class="player-btn">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-regular fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
-
-                </div>
-                <div class="contenitore">
-                    <p>0:25</p>
-                    <div class="barra"></div>
-                    <p>4:35</p>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="footer-right">
-                <div class="options">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <div class="contenitore-right">
-                    <div class="barra"></div>
-
-                </div>
-            </div>
-
-
-        </section>
+        </div>
     </footer>
 
 </body>
